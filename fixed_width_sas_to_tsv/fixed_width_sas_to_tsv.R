@@ -12,7 +12,6 @@ output_folder <- '~/Downloads/'
 
 # Construct a listing of the files in your directory
 filenames <- dir(data_folder) %>% str_replace('-Data.txt', '') %>% str_replace('-Setup.sas', '') %>% unique()
-filenames <- c("00001-0010")
 
 # Iterate over all files in the directory
 for (i in 1:length(filenames)){
